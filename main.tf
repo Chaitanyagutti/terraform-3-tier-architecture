@@ -132,7 +132,7 @@ resource "aws_route_table_association" "b" {
   subnet_id      = aws_subnet.web-subnet-2.id
   route_table_id = aws_route_table.web-rt.id
 }
-
+ 
 #Create EC2 Instance
 resource "aws_instance" "webserver1" {
   ami                    = "ami-0d5eff06f840b45e9"
